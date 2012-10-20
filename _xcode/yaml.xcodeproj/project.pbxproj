@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB0CD1BB16320B36008D83C1 /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = EB0CD1B016320B36008D83C1 /* api.c */; };
+		EB0CD1BC16320B36008D83C1 /* dumper.c in Sources */ = {isa = PBXBuildFile; fileRef = EB0CD1B116320B36008D83C1 /* dumper.c */; };
+		EB0CD1BD16320B36008D83C1 /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = EB0CD1B216320B36008D83C1 /* emitter.c */; };
+		EB0CD1BE16320B36008D83C1 /* loader.c in Sources */ = {isa = PBXBuildFile; fileRef = EB0CD1B316320B36008D83C1 /* loader.c */; };
+		EB0CD1BF16320B36008D83C1 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = EB0CD1B616320B36008D83C1 /* parser.c */; };
+		EB0CD1C016320B36008D83C1 /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = EB0CD1B716320B36008D83C1 /* reader.c */; };
+		EB0CD1C116320B36008D83C1 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = EB0CD1B816320B36008D83C1 /* scanner.c */; };
+		EB0CD1C216320B36008D83C1 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = EB0CD1B916320B36008D83C1 /* writer.c */; };
+		EB0CD1C316320B36008D83C1 /* yaml_private.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0CD1BA16320B36008D83C1 /* yaml_private.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EBB238A61632C9AC00222147 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EB0CD1B016320B36008D83C1 /* api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = api.c; sourceTree = "<group>"; };
+		EB0CD1B116320B36008D83C1 /* dumper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dumper.c; sourceTree = "<group>"; };
+		EB0CD1B216320B36008D83C1 /* emitter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = emitter.c; sourceTree = "<group>"; };
+		EB0CD1B316320B36008D83C1 /* loader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = loader.c; sourceTree = "<group>"; };
+		EB0CD1B416320B36008D83C1 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		EB0CD1B516320B36008D83C1 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		EB0CD1B616320B36008D83C1 /* parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parser.c; sourceTree = "<group>"; };
+		EB0CD1B716320B36008D83C1 /* reader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reader.c; sourceTree = "<group>"; };
+		EB0CD1B816320B36008D83C1 /* scanner.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scanner.c; sourceTree = "<group>"; };
+		EB0CD1B916320B36008D83C1 /* writer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = writer.c; sourceTree = "<group>"; };
+		EB0CD1BA16320B36008D83C1 /* yaml_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yaml_private.h; sourceTree = "<group>"; };
+		EBB2392B16332D8800222147 /* libyaml-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libyaml-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB2392C16332D8800222147 /* libyaml-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libyaml-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB0CD1A516320A7C008D83C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB238A51632C9AC00222147 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB0CD19D16320A7C008D83C1 = {
+			isa = PBXGroup;
+			children = (
+				EB0CD1AF16320B36008D83C1 /* src */,
+				EBB2392B16332D8800222147 /* libyaml-osx.a */,
+				EBB2392C16332D8800222147 /* libyaml-ios.a */,
+			);
+			sourceTree = "<group>";
+		};
+		EB0CD1AF16320B36008D83C1 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EB0CD1B016320B36008D83C1 /* api.c */,
+				EB0CD1B116320B36008D83C1 /* dumper.c */,
+				EB0CD1B216320B36008D83C1 /* emitter.c */,
+				EB0CD1B316320B36008D83C1 /* loader.c */,
+				EB0CD1B416320B36008D83C1 /* Makefile.am */,
+				EB0CD1B516320B36008D83C1 /* Makefile.in */,
+				EB0CD1B616320B36008D83C1 /* parser.c */,
+				EB0CD1B716320B36008D83C1 /* reader.c */,
+				EB0CD1B816320B36008D83C1 /* scanner.c */,
+				EB0CD1B916320B36008D83C1 /* writer.c */,
+				EB0CD1BA16320B36008D83C1 /* yaml_private.h */,
+			);
+			name = src;
+			path = ../src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EB0CD1A616320A7C008D83C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB0CD1C316320B36008D83C1 /* yaml_private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EB0CD1A716320A7C008D83C1 /* yaml-osx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB0CD1AC16320A7C008D83C1 /* Build configuration list for PBXNativeTarget "yaml-osx" */;
+			buildPhases = (
+				EB0CD1A416320A7C008D83C1 /* Sources */,
+				EB0CD1A516320A7C008D83C1 /* Frameworks */,
+				EB0CD1A616320A7C008D83C1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "yaml-osx";
+			productName = libyaml;
+			productReference = EBB2392B16332D8800222147 /* libyaml-osx.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EBB238A71632C9AC00222147 /* yaml-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBB238B31632C9AC00222147 /* Build configuration list for PBXNativeTarget "yaml-ios" */;
+			buildPhases = (
+				EBB238A41632C9AC00222147 /* Sources */,
+				EBB238A51632C9AC00222147 /* Frameworks */,
+				EBB238A61632C9AC00222147 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "yaml-ios";
+			productName = libyaml;
+			productReference = EBB2392C16332D8800222147 /* libyaml-ios.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB0CD19F16320A7C008D83C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Andrew Karpushin";
+			};
+			buildConfigurationList = EB0CD1A216320A7C008D83C1 /* Build configuration list for PBXProject "yaml" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EB0CD19D16320A7C008D83C1;
+			productRefGroup = EB0CD19D16320A7C008D83C1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB0CD1A716320A7C008D83C1 /* yaml-osx */,
+				EBB238A71632C9AC00222147 /* yaml-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB0CD1A416320A7C008D83C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB0CD1BB16320B36008D83C1 /* api.c in Sources */,
+				EB0CD1BC16320B36008D83C1 /* dumper.c in Sources */,
+				EB0CD1BD16320B36008D83C1 /* emitter.c in Sources */,
+				EB0CD1BE16320B36008D83C1 /* loader.c in Sources */,
+				EB0CD1BF16320B36008D83C1 /* parser.c in Sources */,
+				EB0CD1C016320B36008D83C1 /* reader.c in Sources */,
+				EB0CD1C116320B36008D83C1 /* scanner.c in Sources */,
+				EB0CD1C216320B36008D83C1 /* writer.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB238A41632C9AC00222147 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EB0CD1AA16320A7C008D83C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"YAML_VERSION_MAJOR=0",
+					"YAML_VERSION_MINOR=1",
+					"YAML_VERSION_PATCH=4",
+					"YAML_VERSION_STRING=\\\"0.1.4\\\"",
+					_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../include;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB0CD1AB16320A7C008D83C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"YAML_VERSION_MAJOR=0",
+					"YAML_VERSION_MINOR=1",
+					"YAML_VERSION_PATCH=4",
+					"YAML_VERSION_STRING=\\\"0.1.4\\\"",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../include;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB0CD1AD16320A7C008D83C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EB0CD1AE16320A7C008D83C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EBB238B41632C9AC00222147 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libyaml.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libyaml/libyaml-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		EBB238B51632C9AC00222147 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libyaml.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libyaml/libyaml-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB0CD1A216320A7C008D83C1 /* Build configuration list for PBXProject "yaml" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB0CD1AA16320A7C008D83C1 /* Debug */,
+				EB0CD1AB16320A7C008D83C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB0CD1AC16320A7C008D83C1 /* Build configuration list for PBXNativeTarget "yaml-osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB0CD1AD16320A7C008D83C1 /* Debug */,
+				EB0CD1AE16320A7C008D83C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBB238B31632C9AC00222147 /* Build configuration list for PBXNativeTarget "yaml-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB238B41632C9AC00222147 /* Debug */,
+				EBB238B51632C9AC00222147 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB0CD19F16320A7C008D83C1 /* Project object */;
+}
