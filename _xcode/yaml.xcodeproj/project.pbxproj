@@ -42,8 +42,8 @@
 		EB0CD1B816320B36008D83C1 /* scanner.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scanner.c; sourceTree = "<group>"; };
 		EB0CD1B916320B36008D83C1 /* writer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = writer.c; sourceTree = "<group>"; };
 		EB0CD1BA16320B36008D83C1 /* yaml_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yaml_private.h; sourceTree = "<group>"; };
-		EBB2392B16332D8800222147 /* libyaml-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libyaml-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBB2392C16332D8800222147 /* libyaml-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libyaml-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB2392B16332D8800222147 /* libyaml.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libyaml.a; path = "/Users/reven86/Documents/Projects/libyaml-multiplatform/_xcode/build/Release/libyaml.a"; sourceTree = "<absolute>"; };
+		EBB2392C16332D8800222147 /* libyaml.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libyaml.a; path = "/Users/reven86/Documents/Projects/libyaml-multiplatform/_xcode/build/Release-iphoneos/libyaml.a"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				EB0CD1AF16320B36008D83C1 /* src */,
-				EBB2392B16332D8800222147 /* libyaml-osx.a */,
-				EBB2392C16332D8800222147 /* libyaml-ios.a */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,7 +118,7 @@
 			);
 			name = "yaml-osx";
 			productName = libyaml;
-			productReference = EBB2392B16332D8800222147 /* libyaml-osx.a */;
+			productReference = EBB2392B16332D8800222147 /* libyaml.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		EBB238A71632C9AC00222147 /* yaml-ios */ = {
@@ -137,7 +135,7 @@
 			);
 			name = "yaml-ios";
 			productName = libyaml;
-			productReference = EBB2392C16332D8800222147 /* libyaml-ios.a */;
+			productReference = EBB2392C16332D8800222147 /* libyaml.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -270,7 +268,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = yaml;
 			};
 			name = Debug;
 		};
@@ -279,7 +277,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = yaml;
 			};
 			name = Release;
 		};
@@ -296,7 +294,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = yaml;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -312,7 +310,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = yaml;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
