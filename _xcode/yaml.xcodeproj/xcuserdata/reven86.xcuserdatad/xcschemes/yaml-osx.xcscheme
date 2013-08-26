@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EB0CD1A716320A7C008D83C1"
-               BuildableName = "libyaml-osx.a"
+               BuildableName = "libyaml.a"
                BlueprintName = "yaml-osx"
                ReferencedContainer = "container:yaml.xcodeproj">
             </BuildableReference>
@@ -35,7 +35,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
