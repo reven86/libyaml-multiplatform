@@ -17,8 +17,14 @@
 		EB0CD1C216320B36008D83C1 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = EB0CD1B916320B36008D83C1 /* writer.c */; };
 		EB0CD1C316320B36008D83C1 /* yaml_private.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0CD1BA16320B36008D83C1 /* yaml_private.h */; };
 		EB0E6F6F1656E2D400FCCD30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0E6F6E1656E2D400FCCD30 /* Foundation.framework */; };
-		EB0E6F741656E2D400FCCD30 /* yaml.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EB0E6F731656E2D400FCCD30 /* yaml.h */; };
-		EB0E6F761656E2D400FCCD30 /* yaml.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0E6F751656E2D400FCCD30 /* yaml.m */; };
+		EBA3ED5B17CC034D00E7E501 /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = EB0CD1B016320B36008D83C1 /* api.c */; };
+		EBA3ED5C17CC034D00E7E501 /* dumper.c in Sources */ = {isa = PBXBuildFile; fileRef = EB0CD1B116320B36008D83C1 /* dumper.c */; };
+		EBA3ED5D17CC034D00E7E501 /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = EB0CD1B216320B36008D83C1 /* emitter.c */; };
+		EBA3ED5E17CC034D00E7E501 /* loader.c in Sources */ = {isa = PBXBuildFile; fileRef = EB0CD1B316320B36008D83C1 /* loader.c */; };
+		EBA3ED5F17CC034D00E7E501 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = EB0CD1B616320B36008D83C1 /* parser.c */; };
+		EBA3ED6017CC034D00E7E501 /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = EB0CD1B716320B36008D83C1 /* reader.c */; };
+		EBA3ED6117CC034D00E7E501 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = EB0CD1B816320B36008D83C1 /* scanner.c */; };
+		EBA3ED6217CC034D00E7E501 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = EB0CD1B916320B36008D83C1 /* writer.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +34,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				EB0E6F741656E2D400FCCD30 /* yaml.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,11 +52,8 @@
 		EB0CD1B916320B36008D83C1 /* writer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = writer.c; sourceTree = "<group>"; };
 		EB0CD1BA16320B36008D83C1 /* yaml_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yaml_private.h; sourceTree = "<group>"; };
 		EB0E6F6E1656E2D400FCCD30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		EB0E6F721656E2D400FCCD30 /* yaml-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "yaml-Prefix.pch"; sourceTree = "<group>"; };
-		EB0E6F731656E2D400FCCD30 /* yaml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yaml.h; sourceTree = "<group>"; };
-		EB0E6F751656E2D400FCCD30 /* yaml.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yaml.m; sourceTree = "<group>"; };
-		EB798DC716346FD400CC5931 /* libyaml.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libyaml.a; path = "/Users/reven86/Documents/Projects/libyaml-multiplatform/_xcode/build/Release/libyaml.a"; sourceTree = "<absolute>"; };
-		EB9BF77617CC003700D636A0 /* libyaml.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libyaml.a; path = "/Users/reven86/Documents/Projects/libyaml-multiplatform/_xcode/build/Release-iphoneos/libyaml.a"; sourceTree = "<absolute>"; };
+		EBA3ED5817CC032E00E7E501 /* libyaml.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libyaml.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBA3ED5917CC032E00E7E501 /* libyaml.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libyaml.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +79,9 @@
 			isa = PBXGroup;
 			children = (
 				EB0CD1AF16320B36008D83C1 /* src */,
-				EB0E6F701656E2D400FCCD30 /* yaml */,
 				EB0E6F6D1656E2D400FCCD30 /* Frameworks */,
+				EBA3ED5817CC032E00E7E501 /* libyaml.a */,
+				EBA3ED5917CC032E00E7E501 /* libyaml.a */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,24 +112,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EB0E6F701656E2D400FCCD30 /* yaml */ = {
-			isa = PBXGroup;
-			children = (
-				EB0E6F731656E2D400FCCD30 /* yaml.h */,
-				EB0E6F751656E2D400FCCD30 /* yaml.m */,
-				EB0E6F711656E2D400FCCD30 /* Supporting Files */,
-			);
-			path = yaml;
-			sourceTree = "<group>";
-		};
-		EB0E6F711656E2D400FCCD30 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				EB0E6F721656E2D400FCCD30 /* yaml-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -155,7 +140,7 @@
 			);
 			name = "yaml-osx";
 			productName = libyaml;
-			productReference = EB798DC716346FD400CC5931 /* libyaml.a */;
+			productReference = EBA3ED5817CC032E00E7E501 /* libyaml.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		EB0E6F6B1656E2D400FCCD30 /* yaml-ios */ = {
@@ -172,7 +157,7 @@
 			);
 			name = "yaml-ios";
 			productName = yaml;
-			productReference = EB9BF77617CC003700D636A0 /* libyaml.a */;
+			productReference = EBA3ED5917CC032E00E7E501 /* libyaml.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -222,7 +207,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB0E6F761656E2D400FCCD30 /* yaml.m in Sources */,
+				EBA3ED5B17CC034D00E7E501 /* api.c in Sources */,
+				EBA3ED5C17CC034D00E7E501 /* dumper.c in Sources */,
+				EBA3ED5D17CC034D00E7E501 /* emitter.c in Sources */,
+				EBA3ED5E17CC034D00E7E501 /* loader.c in Sources */,
+				EBA3ED5F17CC034D00E7E501 /* parser.c in Sources */,
+				EBA3ED6017CC034D00E7E501 /* reader.c in Sources */,
+				EBA3ED6117CC034D00E7E501 /* scanner.c in Sources */,
+				EBA3ED6217CC034D00E7E501 /* writer.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
